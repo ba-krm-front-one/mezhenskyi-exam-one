@@ -127,22 +127,23 @@
                              alt="icon">
                     </div>
                 </section>
+            </section>
             <footer class="ba-works-footer">
                 <button class="ba-works-footer__btn" type="submit">more</button>
             </footer>
-            </section>
         </section>
     </section>
     <footer id="ba-footer" class="ba-footer">
         <section class="ba-container">
-            <h2 class="ba-footer__title">get in touch</h2>
-            <hr class="ba-horizontal-line">
-            <div class="ba-social-icon-container">
+            <header>
+                <h2 class="ba-footer__title">get in touch</h2>
+                <hr class="ba-horizontal-line">
+            </header>
+            <section class="ba-social-icon-container">
                 <ul class="ba-social-icon">
                     <li class="ba-social-icon__item">
                         <a class="ba-social-icon__link" href="//twitter.com/?lang=ru">
-                            <img class="ba-social-icon__img" src="assets/img/twitter-icon.svg"
-                                 alt="twitter-icon">
+                            <img class="ba-social-icon__img" src="assets/img/twitter-icon.svg" alt="twitter-icon">
                         </a>
                     </li>
                     <li class="ba-social-icon__item">
@@ -166,21 +167,24 @@
                         </a>
                     </li>
                 </ul>
-            </div>
-            <form class="ba-form" action="" method="post">
-                <label>
-                    <input class="ba-form__input ba-form__input-short" type="text"
-                           placeholder="Name">
-                </label>
-                <label>
-                    <input class="ba-form__input ba-form__input-short" type="email" placeholder="Email">
-                </label>
-                <label>
-                    <input class="ba-form__input ba-form__input-long" type="text"
-                           placeholder="Message">
-                </label>
-            </form>
-            <button class="ba-form__btn" type="submit">send</button>
+            </section>
+            <section>
+                <form class="ba-form" action="" method="post">
+                    <label>
+                        <input class="ba-form__input ba-form__input-short" type="text" name="Name"
+                               placeholder="Name">
+                    </label>
+                    <label>
+                        <input class="ba-form__input ba-form__input-short" type="email" name="email"
+                               placeholder="Email">
+                    </label>
+                    <label>
+                        <input class="ba-form__input ba-form__input-long" type="text" name="Message"
+                               placeholder="Message" required>
+                    </label>
+                    <button class="ba-form__btn" type="submit">send</button>
+                </form>
+            </section>
         </section>
     </footer>
     </body>
