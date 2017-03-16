@@ -436,10 +436,17 @@ body, html {
   height: 93px;
   background: url(../../assets/img/button-hero.svg) no-repeat 50%; }
 
-#ba-services {
+.ba-services {
   padding: 116px 0;
   text-align: center; }
-  #ba-services .ba-horizontal-line {
+  .ba-services__title {
+    color: #222222;
+    font-family: "Raleway", sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 60px;
+    text-transform: uppercase; }
+  .ba-services .ba-horizontal-line {
     background-color: #222222;
     margin-top: 74px; }
 
@@ -450,35 +457,133 @@ body, html {
   justify-content: center;
   align-items: center; }
 
-.ba-flex-item {
+.ba-flex-services-item {
   padding: 10px;
   max-width: 340px;
   flex-grow: 1;
   flex-shrink: 1;
   vertical-align: middle; }
-  .ba-flex-item__logo {
+  .ba-flex-services-item__logo {
     padding-bottom: 52px; }
-    .ba-flex-item__logo--higher {
+    .ba-flex-services-item__logo--higher {
       padding-bottom: 37px; }
-    .ba-flex-item__logo--lower {
+    .ba-flex-services-item__logo--lower {
       padding-top: 21px;
       padding-bottom: 48px; }
-  .ba-flex-item__title {
+  .ba-flex-services-item__title {
     color: #222222;
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-size: 24px;
     line-height: 24px;
     padding-bottom: 32px; }
-  .ba-flex-item__description {
+  .ba-flex-services-item__description {
     color: #222222;
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 30px; }
 
-#ba-about {
-  min-height: 500px;
-  background: rgba(0, 0, 0, 0.5) url("../../assets/img/about-us-img-bg.jpg") 50% no-repeat;
+.ba-about {
+  padding: 173px 0 115px 0;
+  background: black url("../../assets/img/about-us-img-background.jpg") 50% no-repeat;
   background-size: cover;
   position: relative; }
+  .ba-about__title {
+    color: #ffffff;
+    font-family: "Lato", sans-serif;
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 90px;
+    text-transform: uppercase; }
+  .ba-about__description {
+    color: #ffffff;
+    font-family: "Lato", sans-serif;
+    font-size: 22px;
+    font-weight: 100;
+    line-height: 28px;
+    padding-bottom: 70px; }
+  .ba-about__link {
+    color: #ffffff;
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-decoration: underline; }
+  .ba-about__img {
+    border-radius: 35px 35px 0 0;
+    position: absolute;
+    right: 313px;
+    bottom: 0; }
+
+.ba-works {
+  padding: 118px 0 80px 0;
+  text-align: center; }
+  .ba-works__title {
+    color: #222222;
+    font-family: "Raleway", sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 60px;
+    text-transform: uppercase; }
+  .ba-works .ba-horizontal-line {
+    background-color: #222222;
+    margin-top: 73px; }
+
+.ba-flex-works-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 91px; }
+
+.ba-flex-works-item {
+  margin: 15px 0;
+  max-width: 370px;
+  height: 420px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  vertical-align: middle;
+  position: relative; }
+  .ba-flex-works-item .ba-works-overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.75);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    visibility: hidden; }
+    .ba-flex-works-item .ba-works-overlay__title {
+      color: #ffffff;
+      font-family: "Lato", sans-serif;
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 60px;
+      text-transform: uppercase;
+      margin-top: 150px;
+      margin-bottom: 27px; }
+
+.ba-flex-works-item--center {
+  margin: 0 15px; }
+
+.ba-flex-works-item:hover .ba-works-overlay {
+  visibility: visible; }
+
+.ba-works-footer {
+  padding: 80px 0;
+  margin: 0 auto; }
+  .ba-works-footer__btn {
+    width: 370px;
+    height: 60px;
+    border: 3px solid #222222;
+    background: #ffffff;
+    color: #222222;
+    font-family: "Lato", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 60px;
+    text-transform: uppercase; }
+    .ba-works-footer__btn:hover {
+      color: #ffffff;
+      background: #222222; }
