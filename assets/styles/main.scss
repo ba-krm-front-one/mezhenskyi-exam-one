@@ -24,7 +24,7 @@ body, html {
 //Header section
 .ba-header {
   min-height: 900px;
-  padding-top: 57px;
+  padding-top: 45px;
   background: #024869 url("../../assets/img/hero-img.jpg") 50% no-repeat;
   background-size: cover;
   position: relative;
@@ -32,22 +32,22 @@ body, html {
 .ba-logo {
   float: left;
   margin: 0;
-  padding: 0;
+  padding: 5px 0 0 0;
 }
 .ba-menu {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
+  justify-content: flex-end;
+  align-content: flex-end;
     align-items: center;
     list-style: none;
     padding:0;
-    margin:0;
+  margin: 0 47px 0 0;
     float: right;
     &__item {
       float: left;
-      margin-left: 50px;
-      margin-top: 10px;
+      margin: 10px 26px;
     }
     &__link {
       display: block;
@@ -80,14 +80,14 @@ body, html {
 }
 .ba-banner {
   margin:0 auto;
-  padding-top: 252px;
+  padding-top: 228px;
   text-align: center;
   &__title {
     color: #ffffff;
     font-family: $font-raleway;
     font-size: 48px;
     font-weight: 700;
-    line-height: 60px;
+    line-height: 70px;
     text-transform: uppercase;
   }
   &__description {
@@ -97,13 +97,14 @@ body, html {
     font-weight: 400;
     line-height: 30px;
     text-align: center;
+    letter-spacing: 1.1px;
   }
 }
 .ba-horizontal-line {
   width: 86px;
   height: 2px;
   background-color: #ffffff;
-  margin: 0 auto 44px;
+  margin: 0 auto 38px;
 }
 .ba-scroll {
   position: absolute;
@@ -120,7 +121,7 @@ body, html {
 }
 //Services section
 .ba-services {
-  padding: 116px 0;
+  padding: 100px 0;
   text-align: center;
   &__title {
     color: #222222;
@@ -132,10 +133,12 @@ body, html {
   }
   .ba-horizontal-line {
     background-color: #222222;
-    margin-top: 74px;
+    margin-top: 55px;
   }
 }
 .ba-flex-container {
+  //max-width: 1150px;
+  padding-top: 35px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -148,16 +151,15 @@ body, html {
   flex-grow: 1;
   flex-shrink: 1;
   vertical-align: middle;
-    &__logo {
-      padding-bottom: 52px;
-      &--higher {
-        padding-bottom: 37px;
-      }
-      &--lower {
-        padding-top: 21px;
-        padding-bottom: 48px;
-      }
+  &__logo {
+    padding-bottom: 28px;
+    &-mobile {
+      padding-bottom: 40px;
     }
+    &-check {
+      padding-bottom: 57px;
+    }
+  }
     &__title {
       color: #222222;
       font-family: $font-lato;
@@ -177,7 +179,7 @@ body, html {
 
 //About section
 .ba-about {
-  padding: 173px 0 115px 0;
+  padding: 147px 0 115px 0;
   background: rgba(0,0,0,1) url("../../assets/img/about-us-img-background.jpg") 50% no-repeat;
   background-size: cover;
   position: relative;
@@ -186,8 +188,9 @@ body, html {
     font-family: $font-lato;
     font-size: 45px;
     font-weight: 400;
-    line-height: 90px;
+    line-height: 70px;
     text-transform: uppercase;
+    letter-spacing: 1.2px;
   }
   &__description {
     color: #ffffff;
@@ -195,7 +198,8 @@ body, html {
     font-size: 22px;
     font-weight: 100;
     line-height: 28px;
-    padding-bottom: 70px;
+    padding-bottom: 55px;
+    letter-spacing: 0.014em;
   }
   &__link{
     color: #ffffff;
@@ -211,13 +215,13 @@ body, html {
   &__img {
     border-radius: 35px 35px 0 0;
     position: absolute;
-    right: 313px;
+    right: 188px;
     bottom: 0;
   }
 }
 //Works section
 .ba-works {
-  padding: 118px 0 80px 0;
+  padding: 100px 0 80px 0;
   text-align: center;
   &__title {
     color: #222222;
@@ -229,7 +233,7 @@ body, html {
   }
   .ba-horizontal-line {
     background-color: #222222;
-    margin-top: 73px;
+    margin-top: 55px;
   }
 }
 .ba-flex-works-container {
@@ -241,7 +245,6 @@ body, html {
   margin-top: 91px;
 }
 .ba-flex-works-item {
-  margin: 15px 0;
   max-width: 370px;
   height: 420px;
   flex-grow: 1;
@@ -276,7 +279,7 @@ body, html {
 }
 
 .ba-works-footer {
-  padding: 80px 0;
+  padding-top: 80px;
   margin: 0 auto;
   &__btn {
     width: 370px;
@@ -287,7 +290,7 @@ body, html {
     font-family: $font-lato;
     font-size: 24px;
     font-weight: 400;
-    line-height: 60px;
+    line-height: 30px;
     text-transform: uppercase;
     &:hover {
       color: #ffffff;
@@ -298,7 +301,7 @@ body, html {
 }
 //Footer section
 .ba-footer {
-  padding: 120px 0;
+  padding: 95px 0;
   background: #131b1e url("../../assets/img/footer-bg.jpg") 50% no-repeat;
   background-size: cover;
   text-align: center;
@@ -312,11 +315,11 @@ body, html {
   }
   .ba-horizontal-line {
     background-color: #ffffff;
-    margin-top: 74px;
+    margin-top: 55px;
   }
 }
 .ba-social-icon-container {
-  margin: 70px 0 80px 0;
+  margin: 58px 0 50px 0;
 }
 .ba-social-icon {
     list-style: none;
@@ -324,7 +327,7 @@ body, html {
     margin: 0;
     &__item {
       display: inline-block;
-      margin-left: 30px;
+      margin: 13px;
     }
     &__link {
       text-decoration: none;
@@ -346,11 +349,11 @@ body, html {
     font-size: 18px;
     font-weight: 400;
     font-style: italic;
-    line-height: 40px;
+    line-height: 47px;
     outline-style: none;
     &-short {
       width: 302px;
-      margin: 0 30px 100px;
+      margin: 0 30px 90px;
     }
     &-long {
       width: 669px;
@@ -378,6 +381,9 @@ body, html {
 @media all and (max-width: 1130px){
   .ba-about__img {
     display: none;
+  }
+  .ba-flex-works-item {
+    margin-top: 10px;
   }
 }
 
