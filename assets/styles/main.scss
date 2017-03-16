@@ -45,13 +45,32 @@ body, html {
       }
     }
     &__link {
+      display: block;
       text-decoration: none;
       color: #fffefe;
       font-family: $font-lato;
       font-size: 14px;
-      font-weight: 500;
-      line-height: 38px;
+      font-weight: 400;
+      line-height: 1;
       text-transform: uppercase;
+      position: relative;
+      &:before {
+        display: block;
+        background-color: #ffffff ;
+        position: absolute;
+        content: "";
+        left: 0;
+        right: 0;
+        top: 15px;
+        height: 3px;
+        opacity: 0;
+        transform: translateY(-15px);
+        transition: transform .2s ease-in, opacity .2s ease-in;
+      }
+      &:hover:before {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 }
 .ba-banner {
@@ -89,6 +108,9 @@ body, html {
   margin-left: -46px;
   height: 93px;
   background: url(../../assets/img/button-hero.svg) no-repeat 50%;
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 //Services section
 .ba-services {
@@ -176,6 +198,9 @@ body, html {
     font-weight: 400;
     line-height: 28px;
     text-decoration: underline;
+    &:hover {
+      color: #222222;
+    }
   }
   &__img {
     border-radius: 35px 35px 0 0;
@@ -243,6 +268,7 @@ body, html {
 .ba-flex-works-item:hover .ba-works-overlay {
   visibility: visible;
 }
+//Footer section
 .ba-works-footer {
   padding: 80px 0;
   margin: 0 auto;
@@ -264,5 +290,89 @@ body, html {
     }
   }
 }
+.ba-footer {
+  padding: 120px 0;
+  background: #131b1e url("../../assets/img/footer-bg.jpg") 50% no-repeat;
+  background-size: cover;
+  text-align: center;
+  &__title {
+    color: #ffffff;
+    font-family: $font-raleway;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 60px;
+    text-transform: uppercase;
+  }
+  .ba-horizontal-line {
+    background-color: #ffffff;
+    margin-top: 74px;
+  }
+}
+.ba-social-icon-container {
+  margin: 70px 0 80px 0;
+}
+.ba-social-icon {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    &__item {
+      display: inline-block;
+      margin-left: 30px;
+    }
+    &__link {
+      text-decoration: none;
+    }
+    &__img {
+          &:hover {
+            transform: scale(1.3);
+          }
+    }
+}
+.ba-form {
+  &__input {
+    background: none;
+    border: none;
+    border-bottom: 2px solid #afafaf;
+    padding-left: 28px;
+    color: #676767;
+    font-family: $font-lato;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 40px;
+    &-short {
+      width: 302px;
+      margin: 0 30px 100px;
+    }
+    &-long {
+      width: 669px;
+    }
+  }
+  &__btn {
+    width: 183px;
+    height: 60px;
+    border: 3px solid #ffffff;
+    background: none;
+    color: #ffffff;
+    font-family: $font-lato;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 50px;
+    &:hover {
+      border-color: #555555;
+      color: #555555;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
 //лазолван
 //амброксол
