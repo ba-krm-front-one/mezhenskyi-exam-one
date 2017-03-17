@@ -1,0 +1,45 @@
+.ba-flex-container {
+  padding-top: 35px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.ba-flex-services-item {
+  padding: 10px;
+  max-width: 340px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  vertical-align: middle;
+
+  &__logo {
+    padding-bottom: 28px;
+
+    &-mobile {
+      padding-bottom: 40px;
+    }
+
+    &-check {
+      padding-bottom: 57px;
+    }
+  }
+
+  &__title {
+    color: #222222;
+    font-family: $font-lato;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    padding-bottom: 32px;
+  }
+
+  &__description {
+    color: #222222;
+    font-family: $font-lato;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+  }
+}

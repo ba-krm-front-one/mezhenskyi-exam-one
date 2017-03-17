@@ -1,0 +1,40 @@
+.ba-form {
+  &__input {
+    background: none;
+    border: none;
+    border-bottom: 2px solid #afafaf;
+    padding-left: 28px;
+    color: #676767;
+    font-family: $font-lato;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 47px;
+    outline-style: none;
+    &-short {
+      width: 302px;
+      margin: 0 30px 90px;
+    }
+    &-long {
+      width: 669px;
+    }
+  }
+  &__btn {
+    display: block;
+    width: 183px;
+    height: 60px;
+    border: 3px solid #ffffff;
+    background: none;
+    outline-style: none;
+    color: #ffffff;
+    font-family: $font-lato;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 50px auto 0;
+    &:hover {
+      border-color: #555555;
+      color: #555555;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.ba-social-icon-container {
+    margin: 58px 0 50px 0;
+}
+
+.ba-social-icon {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ba-social-icon__item {
+    display: inline-block;
+    margin: 13px;
+}
+
+.ba-social-icon__link {
+    text-decoration: none;
+}
+
+.ba-social-icon__img:hover {
+    transform: scale(1.3);
+}
