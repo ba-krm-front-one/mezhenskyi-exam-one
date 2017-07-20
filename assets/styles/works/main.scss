@@ -1,0 +1,22 @@
+@import "flex-container.scss";
+@import "footer.scss";
+
+//Works section
+.ba-works {
+  padding: 100px 0 80px 0;
+  text-align: center;
+  &__title {
+    color: #222222;
+    font-family: $font-raleway;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 60px;
+    text-transform: uppercase;
+  }
+  .ba-horizontal-line {
+    background-color: #222222;
+    margin-top: 55px;
+  }
+}
+
+

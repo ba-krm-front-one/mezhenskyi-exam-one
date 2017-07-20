@@ -1,0 +1,23 @@
+@import "social-icon.scss";
+@import "form.scss";
+
+//Footer section
+.ba-footer {
+  padding: 95px 0;
+  background: #131b1e url("../../assets/img/footer-bg.jpg") 50% no-repeat;
+  background-size: cover;
+  text-align: center;
+  &__title {
+    color: #ffffff;
+    font-family: $font-raleway;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 60px;
+    text-transform: uppercase;
+  }
+  .ba-horizontal-line {
+    background-color: #ffffff;
+    margin-top: 55px;
+  }
+}
+

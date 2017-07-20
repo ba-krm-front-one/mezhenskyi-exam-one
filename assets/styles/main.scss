@@ -1,0 +1,53 @@
+@import "normalize.scss";
+@import "variables.scss";
+@import "header/main.scss";
+@import "services/main.scss";
+@import "about/main.scss";
+@import "works/main.scss";
+@import "footer/main.scss";
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  transition: all 0.1s ease-in;
+  margin: 0;
+  padding: 0;
+}
+html {
+  height: 100%;
+}
+body, html {
+  min-height: 100%;
+}
+
+.ba-container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+@media all and (max-width: 1130px){
+  .ba-about__img {
+    display: none;
+  }
+  .ba-flex-works-item {
+    margin-top: 10px;
+  }
+}
+
+@media all and (max-width: 685px){
+  .ba-form__input-short {
+    margin: 0 0 100px 0;
+  }
+  .ba-form__input-long {
+    width: 302px;
+  }
+}
+
+
+
+
+
+
